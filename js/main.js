@@ -93,5 +93,43 @@ function getItems(className) {
 		
 	})
 }
+
+// swiper
+
+const swiper = new Swiper('.mySwiper1', {
+	slidesPerView: 4,
+	spaceBetween: 30,	
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination:	{
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	mousewhell: true,
+	keyboard: true,
+	});
+
+	const swiper2 = new Swiper('.myswiper2', {
+		slidesPerView: 1,
+			
+		
+		navigation: {
+			prevEl: '.swiper-button-prev2',
+			nextEl: '.swiper-button-next2',
+		},
+  
+		
+		
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		mousewhell: true,
+		keyboard: true,
+		
+	});
+
 	
 
