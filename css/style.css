@@ -98,6 +98,22 @@ button {
   -o-border-radius: 4px;
 }
 
+.swiper-button {
+	width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+
+}
+
 .heading {
   color: #1e212c;
 }
@@ -923,35 +939,13 @@ button {
 .swiper-container-rtl .swiper-button-prev:after {
   content: "";
 }
-.swiper-button-next > svg > path {
-  fill: #424551;
-  width: 24px;
-  height: 24px;
-}
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.swiper-button:hover {
   background-color: #ff3f3a;
 }
 
-.swiper-button-next:hover svg path,
-.swiper-button-prev:hover svg path {
+.swiper-button:hover svg path
+{ 
   fill: white;
 }
 
@@ -968,6 +962,7 @@ button {
 .testimonials__inner {
 	margin: 0 auto;
 	padding-bottom: 195px;
+	position: relative;
 }
 
 .swiper {
@@ -975,19 +970,19 @@ button {
 
 .swiper.myswiper2 {
 	margin: 0 auto;
- 
+
 	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .swiper-wrapper.testimonials-swiper-wrapper {
+	width: 100%;
 	
-	max-width: 1230px;
 }
 
 .swiper-slide__cover {
-	position: relative;	
+	
 
 }
 .testimonials-swiper-slide {
@@ -1047,6 +1042,7 @@ button {
   line-height: 150%;
 }
 
+
 .swiper-button-next2:after,
 .swiper-container-rtl .swiper-button-prev2:after {
   content: "";
@@ -1057,6 +1053,22 @@ button {
   content: "";
 }
 
+.button-box2 {
+	display: flex;
+
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 24px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%, -50%);
+	-moz-transform: translateY(-50%, -50%);
+	-ms-transform: translateY(-50%, -50%);
+	-o-transform: translateY(-50%, -50%);
+	
+}
+
 .swiper-button-prev2 {
 	margin-right: auto;
 	position: absolute;
@@ -1065,21 +1077,25 @@ button {
 	width: 24px;
 	height: 24px;
 	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%, -50%);
-	-moz-transform: translateY(-50%, -50%);
-	-ms-transform: translateY(-50%, -50%);
-	-o-transform: translateY(-50%, -50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 1000;
+	
 }
 .swiper-button-next2 {
-	margin-right: auto;
 	position: absolute;
 	right: 0;
 	top: 50%;
 	width: 24px;
 	height: 24px;
 	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%, -50%);
-	-moz-transform: translateY(-50%, -50%);
-	-ms-transform: translateY(-50%, -50%);
-	-o-transform: translateY(-50%, -50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 1000;
+	
+	
 }

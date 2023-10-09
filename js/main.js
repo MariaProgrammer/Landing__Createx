@@ -116,11 +116,10 @@ const swiper = new Swiper('.mySwiper1', {
 			
 		
 		navigation: {
-			prevEl: '.swiper-button-prev2',
+
 			nextEl: '.swiper-button-next2',
-		},
-  
-		
+			prevEl: '.swiper-button-prev2',
+		},		
 		
 		pagination: {
 			el: '.swiper-pagination',
