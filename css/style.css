@@ -965,20 +965,16 @@ button {
 	position: relative;
 }
 
-.swiper {
-}
-
 .swiper.myswiper2 {
 	margin: 0 auto;
-
+  position: relative;
 	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .swiper-wrapper.testimonials-swiper-wrapper {
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .swiper-slide__cover {
@@ -1001,6 +997,7 @@ button {
 	padding: 64px 105px;
 	background-color: #fff;	
 	display: flex;
+  
 }
 	
 	
@@ -1054,26 +1051,18 @@ button {
 }
 
 .button-box2 {
-	display: flex;
-
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 100%;
-	height: 24px;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%, -50%);
-	-moz-transform: translateY(-50%, -50%);
-	-ms-transform: translateY(-50%, -50%);
-	-o-transform: translateY(-50%, -50%);
-	
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  z-index: 1500;
 }
 
 .swiper-button-prev2 {
 	margin-right: auto;
-	position: absolute;
-	left: 0;
-	top: 50%;
 	width: 24px;
 	height: 24px;
 	transform: translateY(-50%);
@@ -1082,13 +1071,22 @@ button {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	z-index: 1000;
-	
+  position: relative;	
 }
+
+.button-prev2__svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+
+}
+
 .swiper-button-next2 {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 24px;
+  width: 24px;
 	height: 24px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -1096,6 +1094,41 @@ button {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	z-index: 1000;
-	
-	
+  position: relative;	
 }
+
+.button-next2__svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-button2 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;  
+}
+
+.swiper-button2:hover {
+  background-color: #ff3f3a;
+  cursor: pointer;
+}
+
+.swiper-button2:hover svg path
+{ 
+  fill: white;
+}
+
