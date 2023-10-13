@@ -1,0 +1,25 @@
+/* .programs {
+} */
+
+.programs__inner {
+    padding-top: 116px;
+    padding-bottom: 185px;
+}
+.companies__heading {
+    margin-bottom: 60px;
+}
+
+.programs__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.programs__content-left {
+    align-self: start;
+    max-width: 560px;
+}
+
+.programs__content-right {
+    align-self: start;
+    padding-top: 65px;
+}

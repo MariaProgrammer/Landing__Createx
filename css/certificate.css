@@ -1,0 +1,61 @@
+.main__cert {
+    margin-bottom: -46px;
+  }
+  
+  /* .cert {
+  } */
+  
+  .cert__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .cert__inner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -167px;
+    top: -15px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/decors/certificate-shapes_bg.svg") 0 0 no-repeat;
+  }
+  
+  .cert__content {
+    margin-right: 130px;
+    max-width: 400px;
+  }
+  
+  /* .cert__heading {
+  } */
+  
+  .cert__text {
+    margin-bottom: 30px;
+  }
+  
+  /* .list__text {
+  } */
+  
+  .cert__image-box {
+    width: 100%;
+    align-self: start;
+    border-radius: 4px;
+    border: 1px solid var(--gray-300, --gray-300);
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+      0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+  }
+  
+  .cert__logos {
+    display: flex;
+  }
+  
+  .cert__logos-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  /* -----------Team---------------------- */
+  
+  

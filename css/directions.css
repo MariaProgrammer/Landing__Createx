@@ -1,0 +1,219 @@
+/* .directions {
+} */
+
+.directions__inner {
+  position: relative;
+}
+
+.directions__inner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -190px;
+  top: 30px;
+  width: 136px;
+  height: 115px;
+  background: url("../img/decors/dots.svg") 0 0 no-repeat;
+}
+
+.directions__inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -400px;
+  top: 400px;
+  width: 242px;
+  height: 242px;
+  background: url("../img/decors/circles.svg") 0 0 no-repeat;
+}
+
+.directions__heading {
+  margin-bottom: 90px;
+}
+
+/* .directions__body {
+} */
+
+.directions__filter-box {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.directions__filter-box:hover {
+  cursor: pointer;
+}
+
+.directions__filter-item {
+  color: var(--gray-600);
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  border: 1px solid var(--gray-600);
+  border-radius: 4px;
+  align-self: center;
+  transition: all 0.2s ease;
+}
+
+.directions__filter-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.directions__filter-item:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.directions__list {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  min-height: 100vh;
+}
+
+.directions__list-item {
+  width: 100%;
+  border: 1px solid var(--gray-300);
+  border-top: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.directions__list-item:hover {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.directions__list-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.directions__list-linkbox {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.directions__content-box {
+  display: inline-block;
+}
+
+.directions__list-button {
+  padding: 24px 0 0 24px;
+}
+
+.directions__list-button span {
+  display: inline-block;
+  background: var(--success);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--white);
+  padding: 1px 8px;
+  text-align: center;
+}
+
+.list-button--blue span {
+  background: var(--info);
+}
+
+.list-button--orange span {
+  background: var(--warning);
+}
+
+.list-button--pink span {
+  background: var(--pink-button);
+}
+
+.list-button--violet span {
+  background: var(--violet-button);
+}
+
+.directions__list-text {
+  padding: 20px 24px 20px 24px;
+}
+
+.directions__list-link {
+  padding: 0 11px 24px 24px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-900);
+}
+
+.directions__list-link {
+  cursor: pointer;
+}
+
+.directions__list-link span {
+  display: inline-block;
+  width: 11px;
+}
+
+.directions__list-linkbox--new {
+  display: block;
+  position: relative;
+  background: var(--gray-200);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.list-linkbox__text {
+  position: absolute;
+  width: 242px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+}
+
+.new__color {
+  color: var(--primary);
+}
+
+.active {
+  color: var(--white);
+  background: linear-gradient(55.95deg, var(--primary) 0%, var(--button-gradient) 100%);
+}
+
+.show-block {
+  display: block;
+  animation: showBlock 1s linear forwards;
+  -webkit-animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
