@@ -6,38 +6,41 @@
 	
 } */
 .accordion {
-	width: 100%;
+  width: 100%;
   margin-bottom: 24px;
 }
 .accordion__control {
-	width: 100%;
+  width: 100%;
   background-color: transparent;
   cursor: pointer;
-  display: flex;  
+  display: flex;
   align-items: center;
-  justify-content: start;  
+  justify-content: start;
   list-style: none;
 }
 .accordion__title {
-	font-family: var(--font-family);
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 150%;
-	color: var(--gray-900);
-	margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray-900);
+  margin-bottom: 16px;
 }
 
 .accordion__title span {
-	color: var(--primary);
-	
+  color: var(--primary);
 }
 
 .accordion__icon {
-	align-self: start;
-	transition: transform 0.3s ease-out;
+  align-self: start;
+  transition: transform 0.3s ease-out;
 }
 .accordion__content {
-	max-height: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-800);
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
   padding: 0;
@@ -54,7 +57,6 @@
 
 .open .accordion__content {
   opacity: 1;
-  
 }
 
 .accordion {
@@ -72,13 +74,12 @@
   width: 30px;
   height: 30px;
   color: var(--primary);
-  
 }
 
 span.accordion__icon {
-	margin: 0;
-	padding: 0;
-	margin-right: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
 }
 
 .accordion__icon::before {
@@ -87,26 +88,24 @@ span.accordion__icon {
   left: 50%;
   top: 50%;
   width: 20px;
-	height: 2px;
+  height: 2px;
   background-color: var(--primary);
   transform: translate(-50%, -50%);
 }
 
 .accordion__icon::after {
-	content: "";
-	position: absolute;
-	left: 18%;
-	top: 50%;
-	width: 20px;
-	height: 2px;
-	background-color: var(--primary);
-	transform: translate(-50%, -50%);
-	transform: rotate(90deg);
-	opacity: 1;
-	transition: all ease 0.5s;
-	
+  content: "";
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary);
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  opacity: 1;
+  transition: all ease 0.5s;
 }
-	
 
 .accordion__content {
   /* padding: 20px; */
