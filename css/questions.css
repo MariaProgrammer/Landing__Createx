@@ -1,0 +1,114 @@
+/* .questions {
+} */
+.main__questions {
+  padding-bottom: 180px;
+}
+
+.questions__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .questions__img {
+} */
+.questions__content {
+  margin-left: 30px;
+}
+
+.questions__title {
+  margin-bottom: 40px;
+}
+
+/* .questions__form {
+} */
+.questions__form-row {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.questions__form-input,
+.questions__form-text {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-800);
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  padding: 13px 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.questions__form-text {
+  resize: none;
+  height: 128px;
+}
+
+.questions__text-label {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.questions__form-input::placeholder,
+.questions__form-text::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-600);
+}
+
+.questions__form-label:not(:last-child) {
+  margin-right: 25px;
+}
+.questions__form-label {
+  flex: 1 1 auto;
+}
+
+.questions__checkbox-label {
+  margin-right: 50px;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-800);
+  width: 100%;
+}
+.questions__form-checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  margin: 5px 12px 0px 0px;
+}
+.questions__form-default {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.questions__form-default:checked + .questions__form-custom {
+  background: url('../img/icons/check.svg') 50% 50% no-repeat, var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.questions__form-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--gray-800);
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* .questions__form-button {
+} */
+
+.questions__form-btn {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}

@@ -32,6 +32,10 @@
     height: 258px;
     
   }
+
+  .testimonials__title {
+    margin-bottom: 60px;
+  }
   
   .swiper.myswiper2 {
       margin: 0 auto;

@@ -11,6 +11,10 @@
   .team__slider {
    
   } */
+
+  .team__title {
+    margin-bottom: 60px;
+  }
   
   .mySwiper1 {
     max-width: 1252px;

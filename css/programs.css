@@ -5,7 +5,11 @@
   padding-top: 116px;
   padding-bottom: 185px;
 }
-.companies__heading {
+.programs__heading {
+  margin-bottom: 60px;
+}
+
+.programs__title {
   margin-bottom: 60px;
 }
 
@@ -17,6 +21,7 @@
 .programs__content-left {
   align-self: start;
   max-width: 560px;
+  margin-left: 30px;
 }
 
 .programs__content-right {

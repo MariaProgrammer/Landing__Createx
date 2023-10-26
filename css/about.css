@@ -30,7 +30,8 @@
   margin-right: 30px;
 }
 
-.about__heading {
+.about__title {
+  margin-bottom: 60px;
 }
 
 .heading__subtitle {
@@ -42,9 +43,7 @@
 }
 
 .heading__title {
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 130%;
+  
   margin-bottom: 48px;
 }
 
